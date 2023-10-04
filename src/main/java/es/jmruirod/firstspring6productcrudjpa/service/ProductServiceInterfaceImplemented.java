@@ -20,6 +20,17 @@ public class ProductServiceInterfaceImplemented implements ProductServiceInterfa
     private ProductDao productDao;
 
     /**
+     * Obtiene un producto identificado por su ID.
+     * 
+     * @param id El ID del producto a buscar.
+     * @return El producto buscado.
+     */
+    public Product findById(int id)
+    {
+        return this.productDao.findById(id).orElse(null);
+    }
+
+    /**
      * Obtiene una lista de todos los productos disponibles.
      * 
      * @return Lista de productos.

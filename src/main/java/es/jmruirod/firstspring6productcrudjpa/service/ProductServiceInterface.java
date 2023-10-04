@@ -12,6 +12,14 @@ import es.jmruirod.firstspring6productcrudjpa.model.Product;
 public interface ProductServiceInterface 
 {
     /**
+     * Obtiene un producto identificado por su ID.
+     * 
+     * @param id El ID del producto a buscar,
+     * @return El producto buscado.
+     */
+    public Product findById(int id);
+
+    /**
      * Obtiene una lista de todos los productos disponibles.
      * 
      * @return Lista de productos.
