@@ -6,6 +6,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
 /**
  * Clase que representa un producto.
@@ -13,6 +14,7 @@ import jakarta.persistence.Id;
  * @author Jose Manuel Ruiz Rodriguez
  */
 @Entity
+@Table(name = "products")
 public class Product
 {
     @Id

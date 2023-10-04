@@ -1,4 +1,4 @@
-CREATE TABLE `shop`.`product` (
+CREATE TABLE `shop`.`products` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `name` VARCHAR(100) NULL,
   `unitPrice` DOUBLE NULL,
